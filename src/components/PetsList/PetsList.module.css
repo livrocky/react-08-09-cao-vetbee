@@ -1,0 +1,22 @@
+.petsDisplay{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(173, 173, 173);
+    padding: 1rem;
+}
+
+.addPet {
+    background-color: rgb(251,128,23);
+    border: none;
+    border-radius : 0.2rem;
+    padding : 0.7rem 2rem 0.7rem 2rem;
+    color: var(--white);
+}

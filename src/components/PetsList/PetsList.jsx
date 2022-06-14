@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import PetCard from '../PetCard/PetCard';
+import css from './PetsList.module.css';
 
 function PetsList() {
   const [petsArray, setPetsArray] = useState([]);
@@ -14,8 +15,11 @@ function PetsList() {
   });
   return (
     <div>
-      <h1>Pets Page</h1>
-      <div className='petsDisplay'>
+      <section className={css.list}>
+        <h1>Pets Page</h1>
+        <button className={css.addPet}>ADD PET</button>
+      </section>
+      <div className={css.petsDisplay}>
         {petsArray.map((pObj) => (
           <PetCard key={pObj.id} {...pObj} />
         ))}
