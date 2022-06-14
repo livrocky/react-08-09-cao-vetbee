@@ -1,3 +1,5 @@
+import DelBtn from '../Buttons/DelBtn';
+import LogBtn from '../Buttons/LogBtn';
 import css from './PetCard.module.css';
 
 const PetCard = (props) => {
@@ -7,8 +9,8 @@ const PetCard = (props) => {
       <p>{props.dob}</p>
       <p>{props.client_email}</p>
       <div className={css.buttons}>
-        <button className={css.logBtn}>VIEW LOG</button>
-        <button className={css.deleteBtn}>DELETE</button>
+        <LogBtn />
+        <DelBtn />
       </div>
     </div>
   );
