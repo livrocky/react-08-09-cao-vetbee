@@ -1,0 +1,11 @@
+:root {
+    --orange : rgb(253,126,13);
+    --light-grey : rgb(230, 228, 228);
+    --white : rgb(255,255,255);
+    --grey : rgb(125,130,133);
+}
+
+.App {
+    max-width: 50rem;
+    margin: 0 auto;
+}
