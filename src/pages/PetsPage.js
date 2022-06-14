@@ -1,5 +1,11 @@
+import PetsList from '../components/PetsList/PetsList';
+
 const PetsPage = () => {
-  return <div>PetsPage</div>;
+  return (
+    <div>
+      <PetsList />
+    </div>
+  );
 };
 
 export default PetsPage;
