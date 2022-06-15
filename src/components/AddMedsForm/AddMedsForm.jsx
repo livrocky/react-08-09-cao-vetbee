@@ -1,5 +1,6 @@
 import css from './AddMedsForm.module.css';
 import Button from '../../UI/Button';
+import { Link } from 'react-router-dom';
 
 const AddMedsForm = () => {
   return (
@@ -12,7 +13,9 @@ const AddMedsForm = () => {
         <input type='text' name='description' placeholder='Description' />
         <div className='addButtons'>
           <Button secondary>ADD MED</Button>
-          <Button main>BACK</Button>
+          <Link to='/'>
+            <Button main>BACK</Button>
+          </Link>
         </div>
       </form>
     </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../../UI/Button';
 import css from './AddPetForm.module.css';
 
@@ -16,7 +17,9 @@ const AddPetForm = () => {
         <input type='text' name='email' placeholder='Email Address' />
         <div className='addButtons'>
           <Button secondary>ADD PET</Button>
-          <Button main>BACK</Button>
+          <Link to='/'>
+            <Button main>BACK</Button>
+          </Link>
         </div>
       </form>
     </div>
