@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../../UI/Button';
 import PetCard from '../PetCard/PetCard';
 import css from './PetsList.module.css';
 
@@ -20,7 +21,7 @@ function PetsList() {
       <section className={css.list}>
         <h1>Pets Page</h1>
         <Link to='/addPets'>
-          <button className={css.addPet}>ADD PET</button>
+          <Button secondary>Add Pet</Button>
         </Link>
       </section>
       <div className={css.petsDisplay}>

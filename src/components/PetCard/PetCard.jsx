@@ -6,7 +6,7 @@ const PetCard = (props) => {
   return (
     <div className={css.PetCard}>
       <h3>{props.name}</h3>
-      <p>{props.dob}</p>
+      <p>{new Date(props.dob).toLocaleString().split(',')[0]}</p>
       <p>{props.client_email}</p>
       <div className={css.buttons}>
         <LogBtn />

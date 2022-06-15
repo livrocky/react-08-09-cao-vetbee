@@ -5,6 +5,7 @@ import Header from './components/Header/Header.js';
 import MedsPage from './pages/MedsPage';
 import PetsPage from './pages/PetsPage';
 import AddPetsPage from './pages/AddPetsPage';
+import AddMedsPage from './pages/AddMedsPage';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path='/AddPets'>
           <AddPetsPage />
+        </Route>
+        <Route path='/AddMeds'>
+          <AddMedsPage />
         </Route>
       </Switch>
     </div>

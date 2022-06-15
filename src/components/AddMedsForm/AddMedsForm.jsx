@@ -1,4 +1,4 @@
-import css from './AddPetForm.module.css';
+import css from './AddMedsForm.module.css';
 
 const AddPetForm = () => {
   return (
@@ -10,7 +10,7 @@ const AddPetForm = () => {
         <label htmlFor='name'>Enter Name</label>
         <input type='text' name='name' placeholder='Name' />
         <label htmlFor='dob'>Enter Date of Birth</label>
-        <input type='date' name='dob' placeholder='Date Of Birth' />
+        <input type='text' name='dob' placeholder='Date Of Birth' />
         <label htmlFor='email'>Enter Email Address</label>
         <input type='text' name='email' placeholder='Email Address' />
         <div className='addButtons'>

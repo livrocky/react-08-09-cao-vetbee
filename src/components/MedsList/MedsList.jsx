@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import MedCard from '../MedCard/MedCard';
 import css from './MedsList.module.css';
 
@@ -18,7 +19,9 @@ function MedsList() {
     <div>
       <section className={css.list}>
         <h1>Meds Page</h1>
-        <button className={css.addMeds}>ADD MEDS</button>
+        <Link to='/addMeds'>
+          <button className={css.addMeds}>ADD MEDS</button>
+        </Link>
       </section>
       <div className={css.MedsDisplay}>
         {medsArray.map((mObj) => (
