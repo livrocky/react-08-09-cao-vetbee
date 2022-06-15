@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import PetCard from '../PetCard/PetCard';
 import css from './PetsList.module.css';
 
@@ -18,7 +19,9 @@ function PetsList() {
     <div>
       <section className={css.list}>
         <h1>Pets Page</h1>
-        <button className={css.addPet}>ADD PET</button>
+        <Link to='/addPets'>
+          <button className={css.addPet}>ADD PET</button>
+        </Link>
       </section>
       <div className={css.petsDisplay}>
         {petsArray.map((pObj) => (

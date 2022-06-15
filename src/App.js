@@ -4,6 +4,7 @@ import Header from './components/Header/Header.js';
 
 import MedsPage from './pages/MedsPage';
 import PetsPage from './pages/PetsPage';
+import AddPetsPage from './pages/AddPetsPage';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route exact path='/'>
           <PetsPage />
+        </Route>
+        <Route path='/AddPets'>
+          <AddPetsPage />
         </Route>
       </Switch>
     </div>
