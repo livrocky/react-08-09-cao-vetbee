@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../../UI/Button';
 import MedCard from '../MedCard/MedCard';
 import css from './MedsList.module.css';
 
@@ -20,7 +21,7 @@ function MedsList() {
       <section className={css.list}>
         <h1>Meds Page</h1>
         <Link to='/addMeds'>
-          <button className={css.addMeds}>ADD MEDS</button>
+          <Button secondary>Add Medication</Button>
         </Link>
       </section>
       <div className={css.MedsDisplay}>

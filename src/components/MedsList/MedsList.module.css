@@ -12,11 +12,3 @@
     color: rgb(173, 173, 173);
     padding: 1rem;
 }
-
-.addMeds {
-    background-color: rgb(251,128,23);
-    border: none;
-    border-radius : 0.2rem;
-    padding : 0.7rem 2rem 0.7rem 2rem;
-    color: var(--white);
-}

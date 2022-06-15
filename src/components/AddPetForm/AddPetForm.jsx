@@ -1,3 +1,4 @@
+import Button from '../../UI/Button';
 import css from './AddPetForm.module.css';
 
 const AddPetForm = () => {
@@ -14,8 +15,8 @@ const AddPetForm = () => {
         <label htmlFor='email'>Enter Email Address</label>
         <input type='text' name='email' placeholder='Email Address' />
         <div className='addButtons'>
-          <button className={css.addPet}>ADD PET</button>
-          <button className={css.backBtn}>BACK</button>
+          <Button secondary>ADD PET</Button>
+          <Button main>BACK</Button>
         </div>
       </form>
     </div>
