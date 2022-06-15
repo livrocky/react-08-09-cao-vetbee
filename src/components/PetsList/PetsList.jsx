@@ -6,7 +6,8 @@ function PetsList() {
   const [petsArray, setPetsArray] = useState([]);
 
   async function getPets() {
-    const resp = await fetch('https://glittery-dull-snickerdoodle.glitch.me/v1/pets/');
+    // const resp = await fetch('https://glittery-dull-snickerdoodle.glitch.me/v1/pets/');
+    const resp = await fetch('/db/pets.json');
     const dataInJs = await resp.json();
     setPetsArray(dataInJs);
   }
