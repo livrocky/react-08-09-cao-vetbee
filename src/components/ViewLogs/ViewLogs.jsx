@@ -1,5 +1,5 @@
-const ViewLogs = () => {
-  return <div>ViewLogs</div>;
+const ViewLogs = (props) => {
+  return <div>{props.id}</div>;
 };
 
 export default ViewLogs;

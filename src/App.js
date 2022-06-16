@@ -28,6 +28,9 @@ function App() {
         <Route path='/ViewLogs'>
           <ViewLogsPage />
         </Route>
+        {/* <Route path='/pets/:petId'>
+          <ViewLogsPage />
+        </Route> */}
       </Switch>
     </div>
   );

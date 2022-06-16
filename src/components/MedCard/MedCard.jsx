@@ -8,9 +8,9 @@ const MedCard = (props) => {
       <p>{props.name}</p>
       <p>{props.description}</p>
       <div className={css.buttons}>
-        <Button onClick={() => props.onDelete(props.id)} main>
+        {/* <Button onClick={() => props.onDelete(props.id)} main>
           DELETE
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

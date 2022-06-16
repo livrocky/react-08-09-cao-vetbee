@@ -13,15 +13,14 @@ function MedsList() {
     const dataInJs = await resp.json();
     setMedsArray(dataInJs);
   }
+
+  //DELETE NOT WORKING - NO BACK END ROUTER//
   async function deleteMeds(id) {
     const resp = await fetch(`https://glittery-dull-snickerdoodle.glitch.me/v1/meds/${id}`, {
       method: 'DELETE',
     });
     console.log('resp===', resp);
     getMeds();
-    // const resp = await fetch('/db/meds.json');
-    // const dataInJs = await resp.json();
-    // setMedsArray(dataInJs);
   }
   useEffect(() => {
     getMeds();

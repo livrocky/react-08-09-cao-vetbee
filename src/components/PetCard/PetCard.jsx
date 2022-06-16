@@ -9,7 +9,7 @@ const PetCard = (props) => {
       <p>{new Date(props.dob).toLocaleString('lt-LT').split(' ')[0]}</p>
       <p>{props.client_email}</p>
       <div className={css.buttons}>
-        <Link to='/ViewLogs'>
+        <Link to={`/ViewLogs/${props.id}`}>
           <Button secondary>VIEW LOG</Button>
         </Link>
 
