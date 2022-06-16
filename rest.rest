@@ -1,0 +1,9 @@
+###
+POST https://glittery-dull-snickerdoodle.glitch.me/v1/pets/
+Content-Type: application/json
+
+{
+    "name": "test69",
+    "dob": 1654387200000,
+    "client_email": "labas@krabas.ru"
+}
