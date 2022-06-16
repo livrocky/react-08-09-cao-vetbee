@@ -8,8 +8,8 @@ function MedsList() {
   const [medsArray, setMedsArray] = useState([]);
 
   async function getMeds() {
-    // const resp = await fetch('https://glittery-dull-snickerdoodle.glitch.me/v1/meds/');
-    const resp = await fetch('/db/meds.json');
+    const resp = await fetch('https://glittery-dull-snickerdoodle.glitch.me/v1/meds/');
+    // const resp = await fetch('/db/meds.json');
     const dataInJs = await resp.json();
     setMedsArray(dataInJs);
   }
