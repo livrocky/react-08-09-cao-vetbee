@@ -9,7 +9,9 @@ const PetCard = (props) => {
       <p>{props.client_email}</p>
       <div className={css.buttons}>
         <Button secondary>VIEW LOG</Button>
-        <Button main>DELETE</Button>
+        <Button onClick={() => props.onDelete(props.id)} main>
+          DELETE
+        </Button>
       </div>
     </div>
   );

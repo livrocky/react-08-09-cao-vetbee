@@ -13,6 +13,16 @@ function PetsList() {
     const dataInJs = await resp.json();
     setPetsArray(dataInJs);
   }
+  async function deletePets(id) {
+    const resp = await fetch(`https://glittery-dull-snickerdoodle.glitch.me/v1/pets/${id}`, {
+      method: 'DELETE',
+    });
+    console.log('resp===', resp);
+    getPets();
+    // const resp = await fetch('/db/pets.json');
+    // const dataInJs = await resp.json();
+    // setPetsArray(dataInJs);
+  }
   useEffect(() => {
     getPets();
   });
@@ -26,7 +36,7 @@ function PetsList() {
       </section>
       <div className={css.petsDisplay}>
         {petsArray.map((pObj) => (
-          <PetCard key={pObj.id} {...pObj} />
+          <PetCard onDelete={deletePets} key={pObj.id} {...pObj} />
         ))}
       </div>
     </div>
