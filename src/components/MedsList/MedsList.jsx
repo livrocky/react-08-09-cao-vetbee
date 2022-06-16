@@ -13,6 +13,16 @@ function MedsList() {
     const dataInJs = await resp.json();
     setMedsArray(dataInJs);
   }
+  async function deleteMeds(id) {
+    const resp = await fetch(`https://glittery-dull-snickerdoodle.glitch.me/v1/meds/${id}`, {
+      method: 'DELETE',
+    });
+    console.log('resp===', resp);
+    getMeds();
+    // const resp = await fetch('/db/meds.json');
+    // const dataInJs = await resp.json();
+    // setMedsArray(dataInJs);
+  }
   useEffect(() => {
     getMeds();
   });
@@ -26,7 +36,7 @@ function MedsList() {
       </section>
       <div className={css.MedsDisplay}>
         {medsArray.map((mObj) => (
-          <MedCard key={mObj.id} {...mObj} />
+          <MedCard onDelete={deleteMeds} key={mObj.id} {...mObj} />
         ))}
       </div>
     </div>

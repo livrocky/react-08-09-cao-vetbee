@@ -7,3 +7,7 @@ Content-Type: application/json
     "dob": 1654387200000,
     "client_email": "labas@krabas.ru"
 }
+
+###
+DELETE https://glittery-dull-snickerdoodle.glitch.me/v1/meds/33
+Content-Type: application/json

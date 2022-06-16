@@ -6,6 +6,7 @@ import MedsPage from './pages/MedsPage';
 import PetsPage from './pages/PetsPage';
 import AddPetsPage from './pages/AddPetsPage';
 import AddMedsPage from './pages/AddMedsPage';
+import ViewLogsPage from './pages/ViewLogsPage';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path='/AddMeds'>
           <AddMedsPage />
+        </Route>
+        <Route path='/ViewLogs'>
+          <ViewLogsPage />
         </Route>
       </Switch>
     </div>
