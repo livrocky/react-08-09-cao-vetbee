@@ -1,4 +1,4 @@
-import Button from '../../UI/Button';
+// import Button from '../../UI/Button';
 import css from './MedCard.module.css';
 
 const MedCard = (props) => {
