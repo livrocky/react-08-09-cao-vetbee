@@ -7,32 +7,46 @@ import PetsPage from './pages/PetsPage';
 import AddPetsPage from './pages/AddPetsPage';
 import AddMedsPage from './pages/AddMedsPage';
 import ViewLogsPage from './pages/ViewLogsPage';
+import ThemeContext from './components/store/themeContext';
+import { useState } from 'react';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  function nightMode() {
+    setDarkMode(true);
+  }
+
+  const ctx = {
+    nightMode,
+  };
+
   return (
-    <div className='App'>
-      <Header />
-      <Switch>
-        <Route path='/medications'>
-          <MedsPage />
-        </Route>
-        <Route exact path='/'>
-          <PetsPage />
-        </Route>
-        <Route path='/AddPets'>
-          <AddPetsPage />
-        </Route>
-        <Route path='/AddMeds'>
-          <AddMedsPage />
-        </Route>
-        <Route path='/ViewLogs'>
-          <ViewLogsPage />
-        </Route>
-        {/* <Route path='/pets/:petId'>
+    <ThemeContext.Provider value={ctx}>
+      <div className='App'>
+        <Header />
+        <Switch>
+          <Route path='/medications'>
+            <MedsPage />
+          </Route>
+          <Route exact path='/'>
+            <PetsPage />
+          </Route>
+          <Route path='/AddPets'>
+            <AddPetsPage />
+          </Route>
+          <Route path='/AddMeds'>
+            <AddMedsPage />
+          </Route>
+          <Route path='/ViewLogs'>
+            <ViewLogsPage />
+          </Route>
+          {/* <Route path='/pets/:petId'>
           <ViewLogsPage />
         </Route> */}
-      </Switch>
-    </div>
+        </Switch>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
